@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Pytest",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                // "tests/test_adkg.py",
+                // "tests/test_acssht.py",
+                // "tests/test_admpc_adkg.py",
+                "tests/test_admpc.py",
+                // "tests/test_interpolate_at.py",
+                // "tests/test_preprocessing.py",
+                // "tests/test_GFE_admpc.py",
+                // "-o",
+                // "log_cli=true",
+                // "--num 4",
+                "--capture=no",
+                "--num=16",
+                // "--ths 1",
+                "--ths=5",
+                // "--deg 2",
+                "--deg=5",
+                // "--curve ed25519"
+                "--curve=ed25519"
+              ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {"PYTHONPATH":"${workspaceRoot}"},
+        }, 
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
